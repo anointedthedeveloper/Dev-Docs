@@ -2,6 +2,7 @@ import React from "react"
 import type { Metadata } from 'next'
 import { Geist, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
+import Script from 'next/script'
 import './globals.css'
 
 const _geist = Geist({ subsets: ["latin"] });
@@ -26,6 +27,9 @@ export const metadata: Metadata = {
     ],
     apple: '/apple-icon.png',
   },
+  other: {
+    'google-adsense-account': 'ca-pub-1727042318749362',
+  },
 }
 
 export default function RootLayout({
@@ -35,6 +39,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1727042318749362"
+        crossOrigin="anonymous"
+        strategy="beforeInteractive"
+      />
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
