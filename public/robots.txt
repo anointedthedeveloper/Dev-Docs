@@ -1,0 +1,14 @@
+# robots.txt for clitech.dev
+# Allow all search engines to crawl the site
+
+User-agent: *
+Allow: /
+Disallow: /admin
+Disallow: /.well-known
+Disallow: /api/private
+
+# Sitemap location
+Sitemap: https://clitech.dev/sitemap.xml
+
+# Crawl delay (optional, in seconds)
+Crawl-delay: 1
