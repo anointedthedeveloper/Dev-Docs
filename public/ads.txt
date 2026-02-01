@@ -1,8 +1,1 @@
-# ads.txt file for clitech.dev
-# For more information about ads.txt, visit https://iabtechlab.com/ads-txt
-
-# Google AdSense
-google.com, pub-xxxxxxxxxxxxxxxx, DIRECT, f08c47fec0942fa0
-
-# Other ad networks can be added here as needed
-# Format: <domain>, <publisher-account-id>, <type>, <certification-authority-id>
+google.com, pub-1727042318749362, DIRECT, f08c47fec0942fa0
